@@ -17,6 +17,6 @@ void loop()
     thermometer.read();
     // вывод показателей аналогового термометра в градусах Цельсия
     int data = thermometer.getTemperatureC();
-    Serial.println(char(data) + " C");
+    Serial.println(char(data));
     delay(1000);
 }

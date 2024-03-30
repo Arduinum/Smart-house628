@@ -17,6 +17,9 @@ void loop()
     thermometer.read();
     // вывод показателей аналогового термометра в градусах Цельсия
     int data = thermometer.getTemperatureC();
-    Serial.println(data, HEX);
+    // буфер для хранения отформатированной строки
+    char buffer[32];
+    sprintf(buffer, "%X C", data);
+    Serial.println(buffer);
     delay(1000);
 }
