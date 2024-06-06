@@ -18,7 +18,7 @@ def get_data_binary_serial(port: str, speed: int, timeout: int):
 
 
 if __name__ == '__main__':
-    from config import PORT, SPEED, TIMEOUT
+    from template_code.config import PORT, SPEED, TIMEOUT
     
     
     while True:
